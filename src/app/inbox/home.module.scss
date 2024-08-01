@@ -1,0 +1,106 @@
+.header{
+    padding: 0;
+    padding-right: 10px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: space-between;
+    & > div:first-child{
+        height: 100%;
+        img[alt=Logo]{
+            max-height: 100%;
+        }
+    }
+    .logo{
+        background-color: #fff;
+        padding: 10px 20px 0 20px;
+        width: 273.5px;
+
+    }
+    .userdetails{
+        h4{
+            margin: 0;
+            color: #fff;
+        }
+    }
+}
+.sider{
+    .menu{
+        padding: 20px !important;
+        height: 100%;
+        .composeButton{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            font-weight: bold;
+        }
+    }
+}
+.contentarea{
+    padding: 20px;
+    .emailMain{
+        ul{
+            list-style-type: none;
+            li{
+                display: flex;
+                vertical-align: middle;
+                align-items: center;
+                justify-content: space-around;
+                border: 1px solid #ced4da;
+                display: flex;
+                background-color: #fff;
+                padding: 5px 20px;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-bottom: 2px;
+                & > span{
+                    min-width: 150px;
+                    display: block;
+                    cursor: pointer;
+                }
+                a{
+                    display: flex;
+                    width: calc(100% - 150px);
+                    &.unread{
+                        font-weight: bold;
+                    }
+                    span{
+                        display: block;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        text-transform: capitalize;
+                        color: #000;
+                        &:first-child{
+                            width: 10%;
+                        }
+                        &:nth-child(2){
+                            width: 30%;
+                        }
+                        &:nth-child(3){
+                            width: 40%;
+                            padding-right: 20px;
+                        }
+                        &:nth-child(4){
+                            width: 10%;
+                        }
+                        &:last-child{
+                            width: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.layoutStyleone{
+    height: 100%;
+}
+.siderStyle{
+    padding: 30px;
+    padding-top: 10px;
+    .logo{
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    }
+}
