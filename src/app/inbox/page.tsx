@@ -42,6 +42,10 @@ export default function Page() {
     };
 
     const handleOk = () => {
+        if (!to || !subject || !message) {
+            alert('Please fill in all fields.');
+            return;
+        }
         dispatch(addEmail({ to, from, subject, message, status }));
         setModalText('The modal will be closed after two seconds');
         setConfirmLoading(true);
@@ -137,6 +141,7 @@ export default function Page() {
                 onOk={handleOk}
                 confirmLoading={confirmLoading}
                 onCancel={handleCancel}
+                okText="Send"
             >
                 <Form>
                     <Form.Item label="To" name="to">
